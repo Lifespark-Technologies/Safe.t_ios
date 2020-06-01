@@ -171,8 +171,8 @@ extension HomeVC : CLLocationManagerDelegate
       long = ((currentLocation?.coordinate.longitude)!) * .pi / 180.0
       let a1 = pow(cos(lat!), 2.0) * pow(sin(long! / 2.0), 2.0)
       let a2 = pow(sin(lat! / 2.0), 2.0)
-      horizontalDist = 2.0 * atan2(sqrt(a1), sqrt((1 - a1)))
-      verticalDist = 2.0 * atan2(sqrt(a2), sqrt((1 - a2)))
+        horizontalDist = Constants.R * 2.0 * atan2(sqrt(a1), sqrt((1 - a1)))
+      verticalDist = Constants.R * 2.0 * atan2(sqrt(a2), sqrt((1 - a2)))
       horizontalDist! /= 10;
       horizontalDist! *= 10;
       horizontalDist! += 5;

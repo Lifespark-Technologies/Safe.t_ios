@@ -22,7 +22,7 @@ struct Constants {
     static let selectedBtnCTAColor : UIColor = UIColor(rgb: 0xFFFFFF)
     static let disabledBtnCTAColor : UIColor = UIColor(rgb: 0x000000)
     static let lightTextColor : UIColor = UIColor(rgb: 0x666666)
-    
+    static let R : double = 6371000
     
 }
 
